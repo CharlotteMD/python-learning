@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 22 16:24:25 2021
+
+@author: qazicharlotte
+"""
+
+# Day 2 Homework 
+
+first_name = 'Charlotte'
+last_name = 'Qazi'
+full_name = first_name + ' ' + last_name
+print(full_name)
+
+
+country = 'UK'
+city = 'London'
+age = 25
+year = 2021
+is_married = True 
+
+fave_color, fave_ice_cream, fave_animal = 'pink','mint', 'cat'
+
+
+print(type(first_name))
+print(type(last_name))
+print(type(full_name))
+print(type(age))
+print(type(is_married))
+
+
+print(len(first_name))
+first, last = len(first_name), len(last_name)
+low = min(first, last )
+high = max(first, last)
+answer = high - low
+print(answer)
+
+num_one = 5
+num_two = 4
+total = num_one + num_two
+diff = num_one - num_two
+product = num_one * num_two
+division = num_one / num_two
+remainder = num_two % num_one
+exp = num_one ** num_two
+floor_division = num_one // num_two
+
+
+print(total, diff, product, division, remainder, exp, floor_division)
+
+Pi: int= 3
+# r: int = 30
+r = int(input('R is : ', ))
+area_of_circle = Pi * r * r
+circum_of_circle = 2 * Pi * r
+
+print(area_of_circle, circum_of_circle)
+print(type(r), type(Pi))
+
+
+name = input('Name: ', )
+age = input('Age: ', )
+location = input('Location: ', )
+
+print(f'You are {name}, aged {age}, from {location}')
