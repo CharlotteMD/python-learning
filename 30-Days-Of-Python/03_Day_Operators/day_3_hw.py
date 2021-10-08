@@ -1,12 +1,39 @@
+from __future__ import annotations
+
+class Triangle(object):
+   def __init__(self, height: int, base: int):
+      self.height = height
+      self.base = base
+
+   def calc_area(self) -> int:
+      return 0.5 * self.height * self.base
+
+
+if __name__ == "__main__":
+   t1 = Triangle(10,15)
+   t2 = Triangle(20, 35)
+   print(t1.calc_area())
+   print(t2.calc_area())
+
+   a = 10
+   print(a) # 10
+   print(id(a))
+   a = 20
+   print(id(a))
+   print(a) # 20
+
+
 a = 30
 h = 5.3
 v = a + h
-
+ 
 base = int(input('Base is : ', ))
 height = int(input('Height is : ', ))
 area = 0.5 * base * height
 
-print(f'The area of the triangle is {area}')
+print(f"{base}")
+
+print(f"The area of the triangle is {area}")
 
 side_a = int(input('Side a is: ', ))
 side_b = int(input('Side b is: ', ))
@@ -89,4 +116,7 @@ print(f'You are {secs} seconds old!')
 print(1, 1, 1, 1, 1)
 print(2, 1, 2, 4, 8)
 print(3, 1, 3, 9, 1)
+print('''1 1 1 1
+2 2 23 4 5
+6 7 7821 33 1''')
 
